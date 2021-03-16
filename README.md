@@ -66,6 +66,8 @@ export default consumer
 
 next-connect (https://www.npmjs.com/package/next-connect) is a cool project to allow method routing on API routes on NextJS.
 
+Make sure you use the helper functions `.use(...)` since the RunHare SDK for Nextjs handles both GET and POST requests (POST to consumer events, GET to get health and stack info)
+
 ```typescript
 // 'src/pages/api/send-email.ts'
 import { NextApiRequest, NextApiResponse } from 'next'
@@ -84,7 +86,7 @@ interface DemoEvents {
 
 export default nc<NextApiRequest, NextApiResponse>({
   onError: onErrorHandler
-}).post(
+}).use(
   consumer<DemoEvents>(
     ['send-email'],
     process.env.CLIENT_SECRET,

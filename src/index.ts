@@ -20,6 +20,10 @@ const consumer = <T, K extends keyof T = keyof T>(
   const handler = consumer.createHandler(events, consumerHandler)
 
   return async (req: NextApiRequest, res: NextApiResponse) => {
+    if (req.method === 'GET') {
+      return res.json({ status: 'ok', stack: 'nextjs' })
+    }
+
     const response = await handler(req.body, req.headers as PayloadHeaders)
 
     if (response.result === 'fail') {

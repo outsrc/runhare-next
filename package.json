@@ -1,6 +1,6 @@
 {
   "name": "@runhare/next",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "build/index.js",
   "module": "build/index.es.js",
@@ -47,7 +47,7 @@
     "testEnvironment": "node"
   },
   "peerDependencies": {
-    "@runhare/node": "^0.2.0",
+    "@runhare/node": "^0.2.1",
     "next": "^10"
   }
 }
