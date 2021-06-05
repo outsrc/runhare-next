@@ -589,10 +589,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@runhare/node@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@runhare/node/-/node-0.2.0.tgz#cb2e79ade3da87e3a36c13b90b400b5dda9e5058"
-  integrity sha512-mlUiUDaajDf7RLGiu5mXcHzqepLCI550U1n//p1VewI1e5bYLEgDXuH+Rkatjj0O+gpbMhcQLus9Dtn+QiChpw==
+"@runhare/node@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@runhare/node/-/node-0.2.5.tgz#ee1929982e018ea0f70dc2224d99ac631d584b7b"
+  integrity sha512-Ik7gsOHviSyrnA4HVZ/W7h1IOD3g0QfW/WL1rpGSmp7lPZi1knQSJw2D4BdEUnShbTGtrmNoAb3np+XMnGKiJw==
   dependencies:
     axios "^0.21.1"
     crypto-js "^4.0.0"
